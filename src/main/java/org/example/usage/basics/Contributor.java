@@ -2,7 +2,20 @@ package org.example.usage.basics;
 
 public class Contributor {
 
-    String login;
+    private final String login;
 
-    int contributions;
+    private final int contributions;
+
+    public Contributor(String login, int contributions) {
+        this.login = login;
+        this.contributions = contributions;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public int getContributions() {
+        return contributions;
+    }
 }
